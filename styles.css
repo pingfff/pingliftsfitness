@@ -1346,3 +1346,18 @@ body.dark .about-grid {
     margin-left: 0.4rem;
     vertical-align: middle;
 }
+
+/* Darker Programs card for contrast against the light text */
+.chooser-card-products {
+    background: rgba(28, 36, 27, 0.92);
+    border-color: rgba(127, 169, 110, 0.4);
+    color: var(--dark-muted);
+}
+
+.chooser-card-products h3 {
+    color: var(--cream);
+}
+
+.chooser-card-products .chooser-card-cta {
+    color: var(--primary);
+}
