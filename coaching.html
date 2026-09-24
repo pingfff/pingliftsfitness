@@ -6,11 +6,11 @@
     <title>PingLifts Fitness — 1:1 Online Coaching</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="dark">
 
     <header class="header">
         <div class="header-content">
-            <a href="index.html" class="logo">PingLifts<span class="logo-dot">.</span> Fitness</a>
+            <a href="index.html" class="logo display-logo">PINGLIFTS<span>.</span> FITNESS</a>
             <nav class="nav">
                 <a href="#coaching" class="nav-link nav-link-active">Coaching</a>
                 <a href="products.html" class="nav-link nav-badge">Programs</a>
@@ -26,37 +26,57 @@
             <a href="products.html" class="nav-link">Programs</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#faq" class="nav-link">FAQ</a>
-            <a href="#coaching" class="cta-button">Apply Now</a>
         </nav>
     </div>
 
     <aside class="coaching-sidebar">
         <span class="coaching-sidebar-label">On this page</span>
-        <a href="#coaching" class="coaching-sidebar-link">Sign Up</a>
+        <a href="#coaching" class="coaching-sidebar-link">Apply</a>
         <a href="#how-it-works" class="coaching-sidebar-link">How It Works</a>
         <a href="#about" class="coaching-sidebar-link">About</a>
         <a href="#faq" class="coaching-sidebar-link">FAQ</a>
     </aside>
 
-    <section id="coaching" class="form-section form-section-top">
-        <div class="container">
-            <div class="section-header">
-                <span class="eyebrow">Get Started</span>
-                <h2>Sign Up Here</h2>
-            </div>
-            <div class="google-form">
-                <iframe id="google-form-iframe" src="https://form.typeform.com/to/YfpUgiZt?typeform-embed=embed-widget" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="page-hero-content">
+            <p class="page-hero-eyebrow">1:1 Online Coaching</p>
+            <h1 class="display page-hero-title">Unlock the <em>lifter</em> you were meant to be.</h1>
+            <p class="page-hero-sub">Personalized coaching for busy people who want real results without sacrificing their life. Discipline and consistency beat shortcuts.</p>
+            <a href="#coaching" class="page-hero-cta">Apply for Coaching</a>
         </div>
     </section>
 
-    <section class="cross-sell">
-        <div class="container cross-sell-content">
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Data-Driven <i>&#9670;</i></span><span>100% Personalized <i>&#9670;</i></span><span>24/7 Support <i>&#9670;</i></span>
+            <span>Data-Driven <i>&#9670;</i></span><span>100% Personalized <i>&#9670;</i></span><span>24/7 Support <i>&#9670;</i></span>
+            <span>Data-Driven <i>&#9670;</i></span><span>100% Personalized <i>&#9670;</i></span><span>24/7 Support <i>&#9670;</i></span>
+            <span>Data-Driven <i>&#9670;</i></span><span>100% Personalized <i>&#9670;</i></span><span>24/7 Support <i>&#9670;</i></span>
+        </div>
+    </div>
+
+    <section id="coaching" class="apply">
+        <div class="container apply-grid">
             <div>
-                <h2>Not ready for 1:1 yet?</h2>
-                <p>Start with a self-guided training program — the same evidence-based method, on your schedule.</p>
+                <p class="apply-eyebrow">Get Started</p>
+                <h2 class="display apply-title">Apply to work with me.</h2>
+                <p class="apply-copy">Spots are limited so every client gets real attention. Here's what you get:</p>
+                <ul class="trust">
+                    <li><span class="tick">&#10003;</span><div><b>Custom training &amp; nutrition</b><p>Built around your schedule, equipment, and preferences.</p></div></li>
+                    <li><span class="tick">&#10003;</span><div><b>Weekly check-ins</b><p>Progress tracked and plans adjusted so you never plateau.</p></div></li>
+                    <li><span class="tick">&#10003;</span><div><b>Unlimited messaging</b><p>Direct access to me whenever you need it.</p></div></li>
+                    <li><span class="tick">&#10003;</span><div><b>All in one training app</b><p>Workouts, nutrition, videos, and check-ins live in my coaching app &mdash; everything centralized, nothing scattered.</p></div></li>
+                </ul>
+                <div class="coach-photo">
+                    <img src="coach-photo.jpg" alt="Ping, WNBF Classic Physique Pro" />
+                    <span class="caption">Ping &mdash; WNBF Classic Physique Pro</span>
+                </div>
             </div>
-            <a href="products.html" class="cta-button">Browse Programs</a>
+            <div class="form-panel">
+                <p class="form-note">Takes ~3 minutes &mdash; you'll book a call right after.</p>
+                <iframe src="https://form.typeform.com/to/YfpUgiZt?typeform-embed=embed-widget" title="Coaching application"></iframe>
+            </div>
         </div>
     </section>
 
@@ -64,14 +84,12 @@
         <div class="container">
             <div class="section-header reveal">
                 <span class="eyebrow">How It Works</span>
-                <h2>Your Next Steps</h2>
+                <h2 class="display">Your Next Steps</h2>
                 <p class="section-subtitle">From your first message to your first real result — here's exactly what the process looks like.</p>
             </div>
             <div class="steps">
                 <div class="step reveal">
-                    <div class="step-icon">
-                        <span class="step-number">1</span>
-                    </div>
+                    <div class="step-icon"><span class="step-number">1</span></div>
                     <div class="step-card">
                         <span class="step-label">01</span>
                         <h3>Fill Out the Application</h3>
@@ -79,22 +97,18 @@
                     </div>
                 </div>
                 <div class="step reveal">
-                    <div class="step-icon">
-                        <span class="step-number">2</span>
-                    </div>
+                    <div class="step-icon"><span class="step-number">2</span></div>
                     <div class="step-card">
                         <span class="step-label">02</span>
-                        <h3>Book Your Call & Check Your Email</h3>
+                        <h3>Book Your Call &amp; Check Your Email</h3>
                         <p>After submitting the form, you'll book a call directly. Once booked, you'll receive a Google Meet invite to your email.</p>
                     </div>
                 </div>
                 <div class="step reveal">
-                    <div class="step-icon">
-                        <span class="step-number">3</span>
-                    </div>
+                    <div class="step-icon"><span class="step-number">3</span></div>
                     <div class="step-card">
                         <span class="step-label">03</span>
-                        <h3>Execute, Send Form Videos & Keep Progressing</h3>
+                        <h3>Execute, Send Form Videos &amp; Keep Progressing</h3>
                         <p>Now the real work begins. You follow the plan, send your form videos, fill out your weekly check-in, and stay in contact whenever you need to — with full support the entire way.</p>
                     </div>
                 </div>
@@ -106,7 +120,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="eyebrow">What You Get</span>
-                <h2>Coaching Includes</h2>
+                <h2 class="display">Coaching Includes</h2>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -134,7 +148,7 @@
             <div class="about-media"><img src="about-photo.jpg" alt="Lok Ping Fong" /></div>
             <div class="about-copy">
                 <span class="eyebrow">My Story</span>
-                <h2>Welcome to PingLifts Fitness</h2>
+                <h2 class="display">Welcome to PingLifts Fitness</h2>
                 <p>My name is Ping and I'm 24 years old. My own physique transformation is what first pulled me into the gym, and it's what gave me the confidence to leave my corporate 9-5 job and focus fully on what matters to me — helping people transform their physiques. I've since coached paying clients and earned my WNBF Classic Physique Pro Card, competing across multiple regional and international shows. I work with everyone, from total beginners to aspiring competitors, but my approach never changes: discipline and consistency beat shortcuts, and the results that matter are the ones that last.</p>
             </div>
         </div>
@@ -144,7 +158,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="eyebrow">FAQ</span>
-                <h2>Common Questions</h2>
+                <h2 class="display">Common Questions</h2>
             </div>
             <div class="faq-list">
                 <div class="faq-item">
