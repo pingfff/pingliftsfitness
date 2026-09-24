@@ -101,6 +101,15 @@ h2 {
     color: var(--primary);
 }
 
+.nav-link-active {
+    color: var(--primary);
+}
+
+/* First section on a page without a hero clears the fixed header */
+.form-section-top {
+    padding-top: 7rem;
+}
+
 .cta-button {
     display: inline-block;
     background: var(--primary);
