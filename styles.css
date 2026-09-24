@@ -1324,3 +1324,25 @@ body.dark .about-grid {
     font-family: 'Inter', system-ui, sans-serif;
     font-weight: 700;
 }
+
+/* Coming-soon states */
+.chooser-card-soon {
+    opacity: 0.75;
+    cursor: default;
+    transform: none !important;
+}
+
+.nav-soon { cursor: default; }
+
+.soon-pill {
+    font-size: 0.55rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--primary);
+    color: #fff;
+    padding: 0.15rem 0.35rem;
+    border-radius: 999px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
