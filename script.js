@@ -1,31 +1,3 @@
-const PATH_KEY = 'pinglifts-path';
-
-function revealSite() {
-    document.body.classList.remove('gated');
-}
-
-// Returning visitors (same browser session) skip the two-card gate
-if (sessionStorage.getItem(PATH_KEY)) {
-    revealSite();
-}
-
-const coachingCard = document.querySelector('.hero-card-coaching');
-if (coachingCard) {
-    coachingCard.addEventListener('click', (e) => {
-        e.preventDefault();
-        sessionStorage.setItem(PATH_KEY, 'coaching');
-        revealSite();
-        document.getElementById('coaching').scrollIntoView({ behavior: 'smooth' });
-    });
-}
-
-const productsCard = document.querySelector('.hero-card-products');
-if (productsCard) {
-    productsCard.addEventListener('click', () => {
-        sessionStorage.setItem(PATH_KEY, 'products');
-    });
-}
-
 const mobileMenuButton = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuClose = document.querySelector('.mobile-menu-close');
