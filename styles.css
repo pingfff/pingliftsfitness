@@ -1305,3 +1305,22 @@ body.dark .about-grid {
     max-width: 860px;
     margin: 0 auto;
 }
+
+/* Unified type: whole site uses the Inter family (like FAQ questions) */
+.display,
+.display-logo {
+    font-family: 'Inter', system-ui, sans-serif;
+    text-transform: none;
+    letter-spacing: -0.01em;
+    font-weight: 800;
+}
+
+.display-logo {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+}
+
+.marquee-track span {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+}
