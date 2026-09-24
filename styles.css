@@ -165,6 +165,23 @@ h2 {
     color: var(--secondary);
 }
 
+/* Path gate: hide everything but the hero until a path is chosen */
+body.gated header,
+body.gated .mobile-menu,
+body.gated .form-section,
+body.gated .cross-sell,
+body.gated .how-it-works,
+body.gated .features,
+body.gated .about,
+body.gated .faq,
+body.gated .footer {
+    display: none;
+}
+
+body.gated {
+    overflow: hidden;
+}
+
 /* Hero */
 .hero {
     position: relative;
