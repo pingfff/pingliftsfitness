@@ -1081,7 +1081,11 @@ body.dark h1, body.dark h2, body.dark h3 { color: var(--cream); }
 .chooser-card-tag-alt { background: rgba(127, 169, 110, 0.15); color: var(--primary); }
 
 .chooser-card h3 { font-size: 1.25rem; }
-.chooser-card p { font-size: 0.92rem; flex: 1; }
+.chooser-card p { font-size: 0.92rem; }
+.chooser-card-list {
+    flex: 1; margin: 0; padding-left: 1.1rem;
+    font-size: 0.92rem; display: grid; gap: 0.35rem;
+}
 .chooser-card-cta { font-weight: 700; font-size: 0.9rem; }
 
 .chooser-card-coaching {
