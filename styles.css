@@ -1184,7 +1184,7 @@ body.dark h1, body.dark h2, body.dark h3 { color: var(--cream); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* What you get (app screenshots) */
-.what-you-get { padding: 4.5rem 0; background: linear-gradient(160deg, var(--primary-dark), var(--primary)); }
+.what-you-get { padding: 4.5rem 0; background: linear-gradient(160deg, #2A3626, #1C241B); }
 .what-you-get .eyebrow { color: var(--cream); }
 .what-you-get .display { color: #fff; }
 .what-you-get-sub { color: var(--cream); opacity: 0.85; margin-top: 0.5rem; }
