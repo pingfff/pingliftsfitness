@@ -1184,22 +1184,24 @@ body.dark h1, body.dark h2, body.dark h3 { color: var(--cream); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* What you get (app screenshots) */
-.what-you-get { padding: 4.5rem 0; background: var(--ink); }
-.what-you-get-sub { color: var(--dark-muted); margin-top: 0.5rem; }
+.what-you-get { padding: 4.5rem 0; background: linear-gradient(160deg, var(--primary-dark), var(--primary)); }
+.what-you-get .eyebrow { color: var(--cream); }
+.what-you-get .display { color: #fff; }
+.what-you-get-sub { color: var(--cream); opacity: 0.85; margin-top: 0.5rem; }
 .what-you-get-grid {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 2.5rem;
 }
 .what-you-get-card {
     display: flex; flex-direction: column; gap: 0.6rem; text-align: center; align-items: center;
-    background: var(--ink-2); border-radius: 1rem; padding: 1.25rem 1rem;
-    border: 1px solid rgba(127, 169, 110, 0.2);
+    background: rgba(20, 26, 19, 0.35); border-radius: 1rem; padding: 1.25rem 1rem;
+    border: 1px solid rgba(244, 240, 230, 0.25);
 }
-.what-you-get-card h3 { font-size: 0.98rem; color: var(--cream); }
-.what-you-get-card p { font-size: 0.82rem; color: var(--dark-muted); }
+.what-you-get-card h3 { font-size: 0.98rem; color: #fff; }
+.what-you-get-card p { font-size: 0.82rem; color: var(--cream); opacity: 0.85; }
 .phone-frame {
     width: 110px; aspect-ratio: 9 / 19.5;
     border-radius: 1.1rem; overflow: hidden; background: var(--ink-2);
-    border: 3px solid rgba(127, 169, 110, 0.35); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(244, 240, 230, 0.5); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 .phone-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 @media (max-width: 760px) { .what-you-get-grid { grid-template-columns: 1fr 1fr; } }
