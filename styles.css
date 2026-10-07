@@ -1187,23 +1187,23 @@ body.dark h1, body.dark h2, body.dark h3 { color: var(--cream); }
 .what-you-get { padding: 4.5rem 0; background: #fff; }
 .what-you-get-sub { color: var(--muted); margin-top: 0.5rem; }
 .what-you-get-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2.5rem;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 2.5rem;
 }
 .what-you-get-card {
-    display: flex; flex-direction: column; gap: 0.75rem; text-align: center;
-    background: var(--background); border-radius: 1rem; padding: 1.5rem 1.25rem;
+    display: flex; flex-direction: column; gap: 0.6rem; text-align: center; align-items: center;
+    background: var(--background); border-radius: 1rem; padding: 1.25rem 1rem;
     border: 1px solid rgba(62, 74, 59, 0.08);
 }
-.what-you-get-card h3 { font-size: 1.05rem; color: var(--secondary); }
-.what-you-get-card p { font-size: 0.88rem; color: var(--muted); }
+.what-you-get-card h3 { font-size: 0.98rem; color: var(--secondary); }
+.what-you-get-card p { font-size: 0.82rem; color: var(--muted); }
 .phone-frame {
-    width: 100%; max-width: 170px; margin: 0 auto; aspect-ratio: 9 / 19.5;
-    border-radius: 1.5rem; overflow: hidden; background: var(--secondary);
-    border: 4px solid var(--secondary); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 110px; aspect-ratio: 9 / 19.5;
+    border-radius: 1.1rem; overflow: hidden; background: var(--secondary);
+    border: 3px solid var(--secondary); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 .phone-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
-@media (max-width: 900px) { .what-you-get-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 520px) { .what-you-get-grid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .what-you-get-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 440px) { .what-you-get-grid { grid-template-columns: 1fr; } }
 
 /* Apply section (Typeform split) */
 .apply { padding: 5.5rem 0; }
