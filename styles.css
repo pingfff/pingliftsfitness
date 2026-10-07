@@ -1199,7 +1199,7 @@ body.dark h1, body.dark h2, body.dark h3 { color: var(--cream); }
 .what-you-get-card h3 { font-size: 0.98rem; color: #fff; }
 .what-you-get-card p { font-size: 0.82rem; color: var(--cream); opacity: 0.85; }
 .phone-frame {
-    width: 110px; aspect-ratio: 9 / 19.5;
+    width: 132px; aspect-ratio: 9 / 19.5;
     border-radius: 1.1rem; overflow: hidden; background: var(--ink-2);
     border: 3px solid rgba(244, 240, 230, 0.5); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
