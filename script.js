@@ -85,6 +85,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.15 });
 
     revealEls.forEach(el => observer.observe(el));
+
+    // Per-client result carousels
+    document.querySelectorAll('[data-carousel]').forEach(carousel => {
+        const slides = carousel.querySelectorAll('.result-slide');
+        const dotsWrap = carousel.querySelector('[data-dots]');
+        let index = 0;
+
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.className = 'result-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'Go to screenshot ' + (i + 1));
+            dot.addEventListener('click', () => show(i));
+            dotsWrap.appendChild(dot);
+        });
+
+        function show(i) {
+            index = (i + slides.length) % slides.length;
+            slides.forEach((s, n) => s.classList.toggle('active', n === index));
+            dotsWrap.querySelectorAll('.result-dot').forEach((d, n) => d.classList.toggle('active', n === index));
+        }
+
+        carousel.querySelector('[data-prev]').addEventListener('click', () => show(index - 1));
+        carousel.querySelector('[data-next]').addEventListener('click', () => show(index + 1));
+    });
 });
 
 const formFrame = document.getElementById('google-form-iframe');

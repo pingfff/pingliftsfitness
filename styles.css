@@ -1219,21 +1219,39 @@ body.dark h1, body.dark h2, body.dark h3 { color: var(--cream); }
     background: rgba(20, 26, 19, 0.35); border-radius: 1rem; padding: 1.25rem;
     border: 1px solid rgba(244, 240, 230, 0.25);
 }
-.result-media {
-    border-radius: 0.75rem; overflow: hidden; background: var(--ink-2);
-    aspect-ratio: 13 / 6; /* wide before/after shots */
+.result-carousel { position: relative; border-radius: 0.75rem; overflow: hidden; background: var(--ink-2); }
+.result-slides { position: relative; aspect-ratio: 13 / 9; }
+.result-slide {
+    position: absolute; inset: 0; opacity: 0; transition: opacity 0.3s ease;
+    display: flex; align-items: center; justify-content: center; padding: 0.5rem;
 }
-.result-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.result-slide.active { opacity: 1; }
+.result-slide img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; border-radius: 0.4rem; }
+.result-arrow {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 2rem; height: 2rem; border: none; border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55); color: #fff; font-size: 0.95rem; line-height: 1;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s ease; z-index: 2;
+}
+.result-arrow:hover { background: rgba(0, 0, 0, 0.8); }
+.result-prev { left: 0.5rem; }
+.result-next { right: 0.5rem; }
+.result-dots {
+    position: absolute; bottom: 0.6rem; left: 0; right: 0;
+    display: flex; justify-content: center; gap: 0.4rem; z-index: 2;
+}
+.result-dot {
+    width: 8px; height: 8px; border-radius: 50%; border: none; padding: 0;
+    background: rgba(255, 255, 255, 0.45); cursor: pointer; transition: background 0.2s ease;
+}
+.result-dot.active { background: #fff; }
 .result-card blockquote p {
     font-size: 0.92rem; color: var(--cream); line-height: 1.55; margin: 0;
 }
 .result-card figcaption { display: flex; flex-direction: column; gap: 0.15rem; margin-top: auto; }
 .result-name { font-size: 0.9rem; font-weight: 700; color: #fff; }
 .result-stat { font-size: 0.78rem; color: var(--cream); opacity: 0.8; }
-.result-graph {
-    font-size: 0.78rem; color: var(--cream); opacity: 0.85; text-decoration: underline;
-}
-.result-graph:hover { opacity: 1; }
 @media (max-width: 760px) { .results-grid { grid-template-columns: 1fr; } }
 
 /* Apply section (Typeform split) */
