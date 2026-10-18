@@ -1263,7 +1263,7 @@ body.dark h1, body.dark h2, body.dark h3 { color: var(--cream); }
     padding-bottom: 0.75rem; border-bottom: 1px solid #eee; margin-bottom: 1rem;
 }
 
-.form-panel iframe { width: 100%; border: none; height: 620px; }
+.form-panel iframe { width: 100%; border: none; height: 900px; }
 
 /* Dark restyle of coaching sections */
 body.dark .how-it-works, body.dark .features { background: var(--ink); }
