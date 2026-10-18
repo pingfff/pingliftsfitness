@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         carousel.querySelector('[data-prev]').addEventListener('click', () => show(index - 1));
         carousel.querySelector('[data-next]').addEventListener('click', () => show(index + 1));
+        show(0);
     });
 });
 
